@@ -1,0 +1,3 @@
+# WoW Recruitment Menu
+
+Allows you to define which classes your guild needs. Configuration is done via editing `wowrecruit_menu.php`, for now.
