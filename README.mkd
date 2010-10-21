@@ -1,3 +1,10 @@
+
+# IMPORTANT!!!
+
+Before this plugin or menu item will work correctly with e107 you will need to rename the directory you're presented with to `wowrecruit_menu`.
+If you are not comfortable with doing this you will need to wait until I push a release to [plugins.e107](http://plugins.e107.org/).
+
+
 # WoW Recruitment Menu
 
 Allows you to define which classes your guild needs. Configuration is done via editing `wowrecruit_menu.php`, for now.
