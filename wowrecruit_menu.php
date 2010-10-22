@@ -4,37 +4,11 @@ if (!defined('e107_INIT')) { exit; }
 
 define("WOWREC", e_PLUGINS."wowrecruit_menu/");
 
-// #######################################################
-// ### WoW Recruit Menu Configuration Start ##############
-
-// modify the below to signify the need for each class.
-// supported availability modes are: None, Low, Medium, High
-
-$deathknight = "High";
-$druid = "High";
-$hunter = "High";
-$mage = "High";
-$paladin = "High";
-$priest = "High";
-$rogue = "High";
-$shaman = "High";
-$warlock = "High";
-$warrior = "High";
-
-
-// URL to your recruitment thread, forum, whatever.
-$recruitment_thread = "#"
-
-
-// ### WoW Recruit Menu Configuration End ################
-// #######################################################
-
-// no further editing should be required!
-
 function recruitBlock($class, $demand){
+	$demand = (isset($demand) ? $demand : WOWREC_LAN01);
 	return "
 	<tr>
-		<td><img src='".WOWREC".images/".strtolower($class).".gif' border='0'></td>
+		<td><img src='".WOWREC".images/".strtolower(str_replace(" ", "", $class)).".gif' border='0'></td>
 		<td'><span class='".str_replace(" ", "", $class)."'>".$class."</span></td>
 		<td><span class='wr".$demand."'>".$demand."</span></td>
 	</tr>";
@@ -45,29 +19,29 @@ $text = "
 <table border='0' style='width=100%' cellspacing='0' cellpadding='0'>
 	<tr>
 		<td colspan='3'>
-			<a href='".$recruitment_thread."'>Click here to Apply</a>
+			<a href='".$menu_pref['wowrecruit_menu']['recruit_url']."'>".WOWREC_LAN05."</a>
 		</td>
 	</tr>
 
 	<tr>
-		<td colspan='2'>Class Name</td>
-		<td>Current Need</td>
+		<td colspan='2'>".WOWREC_LAN06."</td>
+		<td>".WOWREC_LAN07."</td>
 	</tr>";
 
-$text .= recruitBlock("Death Knight", $deathknight);
-$text .= recruitBlock("Druid", $druid);
-$text .= recruitBlock("Hunter", $hunter);
-$text .= recruitBlock("Mage", $mage);
-$text .= recruitBlock("Paladin", $paladin);
-$text .= recruitBlock("Priest", $priest);
-$text .= recruitBlock("Rogue", $rogue);
-$text .= recruitBlock("Shaman", $shaman);
-$text .= recruitBlock("Warlock", $warlock);
-$text .= recruitBlock("Warrior", $warrior);
+$text .= recruitBlock(WOWREC_CLAN01, $menu_pref['wowrecruit_menu']['deathknight']);
+$text .= recruitBlock(WOWREC_CLAN02, $menu_pref['wowrecruit_menu']['druid']);
+$text .= recruitBlock(WOWREC_CLAN03, $menu_pref['wowrecruit_menu']['hunter']);
+$text .= recruitBlock(WOWREC_CLAN04, $menu_pref['wowrecruit_menu']['mage']);
+$text .= recruitBlock(WOWREC_CLAN05, $menu_pref['wowrecruit_menu']['paladin']);
+$text .= recruitBlock(WOWREC_CLAN05, $menu_pref['wowrecruit_menu']['priest']);
+$text .= recruitBlock(WOWREC_CLAN06, $menu_pref['wowrecruit_menu']['rogue']);
+$text .= recruitBlock(WOWREC_CLAN07, $menu_pref['wowrecruit_menu']['shaman']);
+$text .= recruitBlock(WOWREC_CLAN09, $menu_pref['wowrecruit_menu']['warlock']);
+$text .= recruitBlock(WOWREC_CLAN10, $menu_pref['wowrecruit_menu']['warrior']);
 
 
 $text .= "</table>";
 
-$ns->tablerender("Recruitment Status", $text, 'wowrecruit');
+$ns->tablerender(WOWREC_TITLE, $text, 'wowrecruit');
 
 ?>
