@@ -16,8 +16,8 @@
 $eplug_admin = TRUE;
 require_once("../../class2.php");
 if (!getperms("4")) { header("location:".e_BASE."index.php"); exit ;}
-
 include_lan(e_PLUGIN."wowrecruit_menu/languages/".e_LANGUAGE.".php");
+require_once(e_ADMIN."auth.php");
 
 if ($_POST['update_menu']) {
 	unset($menu_pref['wowrecruit_menu']);
@@ -99,7 +99,7 @@ $text = '
 	</tr>
 
 	<tr>
-	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS06.'</td>
+	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS07.'</td>
 	<td style="width:70%" class="forumheader3">
 	<select name="pref[rogue]" class="tbox">
 	<option value="'.WOWREC_LAN01.'"'.($menu_pref['wowrecruit_menu']['rogue'] == WOWREC_LAN01 ? ' selected="selected"' : '').'>'.WOWREC_LAN01.'</option>
@@ -110,7 +110,7 @@ $text = '
 	</tr>
 
 	<tr>
-	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS07.'</td>
+	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS08.'</td>
 	<td style="width:70%" class="forumheader3">
 	<select name="pref[shaman]" class="tbox">
 	<option value="'.WOWREC_LAN01.'"'.($menu_pref['wowrecruit_menu']['shaman'] == WOWREC_LAN01 ? ' selected="selected"' : '').'>'.WOWREC_LAN01.'</option>
@@ -121,7 +121,7 @@ $text = '
 	</tr>
 
 	<tr>
-	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS08.'</td>
+	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS09.'</td>
 	<td style="width:70%" class="forumheader3">
 	<select name="pref[warlock]" class="tbox">
 	<option value="'.WOWREC_LAN01.'"'.($menu_pref['wowrecruit_menu']['warlock'] == WOWREC_LAN01 ? ' selected="selected"' : '').'>'.WOWREC_LAN01.'</option>
@@ -132,7 +132,7 @@ $text = '
 	</tr>
 
 	<tr>
-	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS09.'</td>
+	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS10.'</td>
 	<td style="width:70%" class="forumheader3">
 	<select name="pref[warrior]" class="tbox">
 	<option value="'.WOWREC_LAN01.'"'.($menu_pref['wowrecruit_menu']['warrior'] == WOWREC_LAN01 ? ' selected="selected"' : '').'>'.WOWREC_LAN01.'</option>
@@ -143,7 +143,7 @@ $text = '
 	</tr>
 
 	<tr>
-	<td style="width:30%" class="forumheader3">'.WOWREC_CLASS10.'</td>
+	<td style="width:30%" class="forumheader3">'.WOWREC_LAN05.'</td>
 	<td style="width:70%" class="forumheader3">
 	<input type="text" class="tbox" name="pref[recruit_url]" value="'.(($menu_pref['wowrecruit_menu']['recruit_url']) ? $menu_pref['wowrecruit_menu']['recruit_url'] : '#').'" />
 	</td>
