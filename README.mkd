@@ -1,7 +1,41 @@
+# Are you upgrading from 0.3 to 0.4? Read this!
+
+Due to the **massive* amounts of changes made to wowrecruit (it's basically a rewrite) you are encouraged to **UNINSTALL** and then **DELETE** your previous installation of wowrecruit.
+
+I am not responsible for errors you are thrown if you don't do the above. If you come to me with errors and you answer the question "Did you delete your old copy?" with "No."
+I'm going to stab you.
+
 # WoW Recruitment Menu
 
-Allows you to define which classes your guild needs.
+Allows you to define how many of which class and spec your guild needs.
 
-## Translations
+## How do I configure the menu?
+
+Go to your Admin Area and select WoW Recruitment Menu from the Plugins drop down. Set which class can manage the menu (and a URL for people to apply!).
+
+## How do I add classes and specs of people we're looking for?
+
+* WoW Recruitment Menu > Add New Request.
+* Select the class/spec you're after and then insert the amount you want to recruit in the `Needed` field.
+* Click `Add`.
+
+## How do I remove the requests I've filled?
+
+* WoW Recruitment Menu > Manage Recruitment.
+* Click the delete image next to the class/spec combo you no longer want.
+* Click `Yes`.
+
+## How do I change the amount of class/spec I'm looking for?
+
+* WoW Recruitment Menu > Manage Recruitment.
+* Click the edit image next to the class/spec combo you want to change.
+* Enter the new amount in the text box.
+* Click `Update`.
+
+# Translations
 
 If you would like to translate this plugin, post the translations on [paste2.org](http://paste2.org/) and [PM](http://e107.org/e107_plugins/pm/pm.php?send.37) me the URL generated.
+
+## Note
+
+Translations created or sent in (which were none!) prior to 0.4 are no longer valid as the language file has undergone a complete rewrite.

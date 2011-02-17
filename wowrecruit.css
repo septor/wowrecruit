@@ -1,15 +1,10 @@
-.wrLow { color: #ff8000; }
-.wrHigh { color: #00FF00; }
-.wrMedium { color: #ffd517; }
-.wrNone { color: #d80000; }
-
-.DeathKnight { color: #C41F3B; }
-.Druid { color: #FF7D0A; }
-.Hunter { color: #ABD473; }
-.Mage { color: #69CCF0; }
-.Paladin { color: #F58CBA; }
-.Priest { color: #FFFFFF; }
-.Rogue { color: #FFF569; }
-.Shaman { color: #0070DE; }
-.Warlock { color: #9482C9; }
-.Warrior { color: #C79C6E; }
+.deathknight { color: #c41f3b; }
+.druid { color: #ff7d0a; }
+.hunter { color: #abd473; }
+.mage { color: #69ccf0; }
+.paladin { color: #f58cba; }
+.priest { color: #ffffff; }
+.rogue { color: #fff569; }
+.shaman { color: #0070de; }
+.warlock { color: #9482c9; }
+.warrior { color: #c79c6e; }
