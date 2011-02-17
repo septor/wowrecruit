@@ -1,6 +1,6 @@
 # Are you upgrading from 0.3 to 0.4? Read this!
 
-Due to the **massive* amounts of changes made to wowrecruit (it's basically a rewrite) you are encouraged to **UNINSTALL** and then **DELETE** your previous installation of wowrecruit.
+Due to the **massive** amounts of changes made to wowrecruit (it's basically a rewrite) you are encouraged to **UNINSTALL** and then **DELETE** your previous installation of wowrecruit.
 
 I am not responsible for errors you are thrown if you don't do the above. If you come to me with errors and you answer the question "Did you delete your old copy?" with "No."
 I'm going to stab you.
