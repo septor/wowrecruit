@@ -37,7 +37,7 @@ $spec = array(
 if(isset($_POST['add'])){
 	if($_POST['count'] >= 0 && is_numeric($_POST['count'])){
 		$class_spec = explode(".", $_POST['class_spec']);
-		$sql->db_Insert("wowrecruit_needed", "'', '".intval($_POST['count'])."', '".$class[$class_spec[0]]."', '".$spec[$class[$class_spec[0]]][$class_spec[1]]."'") or die(mysql_error());
+		$sql->db_Insert("wowrecruit_needed", "'', '".intval($_POST['count'])."', '".$tp->toDB($class[$class_spec[0]])."', '".$tp->toDB($spec[$class[$class_spec[0]]][$class_spec[1]])."'") or die(mysql_error());
 		$message = WOWREC_ADD01.$_POST['count']." ".$spec[$class[$class_spec[0]]][$class_spec[1]]." ".$class[$class_spec[0]].($_POST['count'] > 1 ? "s" : "")."!";
 	}else{
 		$message = WOWREC_ADD02;
