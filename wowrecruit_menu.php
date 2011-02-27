@@ -3,11 +3,13 @@ if (!defined('e107_INIT')) { exit; }
 define("WOWREC", e_PLUGIN."wowrecruit_menu/");
 include_lan(WOWREC."languages/".e_LANGUAGE.".php");
 
-// Minor preparation for WoW Guild Application integration!
-// DO NOT change the below two lines of code! Or else!
-$useWGA = false;
-$applyurl = ($useWGA == true ? e_PLUGIN."wowapp/apply.php" : (($pref['wowrecruit_url']) ? $pref['wowrecruit_url'] : "#"));
+if(isset($pref['plug_installed']['wowapp']) && $pref['wowapp_wowrecruitlink'] == true){
+	$useWGA = true;
+}else{
+	$useWGA = false;
+}
 
+$applyurl = ($useWGA == true ? e_PLUGIN."wowapp/apply.php" : (($pref['wowrecruit_url']) ? $pref['wowrecruit_url'] : "#"));
 
 function recruitBlock($class, $spec, $needed){
 	return "
