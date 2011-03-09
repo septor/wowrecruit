@@ -3,13 +3,13 @@ if (!defined('e107_INIT')) { exit; }
 define("WOWREC", e_PLUGIN."wowrecruit_menu/");
 include_lan(WOWREC."languages/".e_LANGUAGE.".php");
 
-if(isset($pref['plug_installed']['wowapp']) && $pref['wowapp_wowrecruitlink'] == true){
-	$useWGA = true;
+if(isset($pref['plug_installed']['avalanche'])){
+	$useAvalanche = true;
 }else{
-	$useWGA = false;
+	$useAvalanche = false;
 }
 
-$applyurl = ($useWGA == true ? e_PLUGIN."wowapp/apply.php" : (($pref['wowrecruit_url']) ? $pref['wowrecruit_url'] : "#"));
+$applyurl = ($useAvalanche == true ? e_PLUGIN."avalanche/apply.php" : (($pref['wowrecruit_url']) ? $pref['wowrecruit_url'] : "#"));
 
 function recruitBlock($class, $spec, $needed){
 	return "
