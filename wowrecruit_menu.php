@@ -16,7 +16,7 @@ function recruitBlock($class, $spec, $needed){
 	<tr>
 		<td><img src='".WOWREC."images/".strtolower(str_replace(" ", "", $class)).".gif' border='0'></td>
 		<td style='text-align:right;'>".$needed."</td>
-		<td><span class='".strtolower(str_replace(" ", "", $class))."'>".$spec." ".$class.($needed > 1 ? "s" : "")."</span></td>
+		<td><span class='wow_".strtolower(str_replace(" ", "", $class))."'>".$spec." ".$class.($needed > 1 ? "s" : "")."</span></td>
 	</tr>";
 }
 
