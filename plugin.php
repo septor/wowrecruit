@@ -4,7 +4,7 @@ include_lan(e_PLUGIN."wowrecruit_menu/languages/".e_LANGUAGE.".php");
 //PLUGIN INFO------------------------------------------------------------------------------------------------+
 
 $eplug_name        = "WoW Recruitment Menu";
-$eplug_version     = "0.4";
+$eplug_version     = "0.5";
 $eplug_author      = "Patrick Weaver";
 $eplug_url         = "http://painswitch.com/";
 $eplug_email       = "patrickweaver@gmail.com";
