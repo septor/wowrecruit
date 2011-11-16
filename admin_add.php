@@ -22,7 +22,7 @@ $class = array(
 );
 $spec = array(
 	WOWREC_DEATHKNIGHT => array(WOWREC_BLOOD, WOWREC_FROST, WOWREC_UNHOLY),
-	WOWREC_DRUID => array(WOWREC_BALANCE, WOWREC_FERAL, WOWREC_RESTORATION),
+	WOWREC_DRUID => array(WOWREC_BALANCE, WOWREC_FERALDPS, WOWREC_RESTORATION, WOWREC_FERALTANK),
 	WOWREC_HUNTER => array(WOWREC_BEASTMASTERY, WOWREC_MARKSMANSHIP, WOWREC_SURVIVAL),
 	WOWREC_MAGE => array(WOWREC_ARCANE, WOWREC_FIRE, WOWREC_FROST),
 	WOWREC_PALADIN => array(WOWREC_HOLY, WOWREC_PROTECTION, WOWREC_RETRIBUTION),
@@ -64,6 +64,10 @@ if(check_class($pref['wowrecruit_manageclass'])){
 		$text .= "<option value='".$i.".0'>".$spec[$class[$i]][0]." ".$class[$i]."</option>
 		<option value='".$i.".1'>".$spec[$class[$i]][1]." ".$class[$i]."</option></option>
 		<option value='".$i.".2'>".$spec[$class[$i]][2]." ".$class[$i]."</option></option>";
+		// yeah it's lazy, but it works so whatever
+		if($class[$i] == "Druid"){
+			$text .= "<option value='".$i.".3'>".$spec[$class[$i]][3]." ".$class[$i]."</option></option>";
+		}
 	}
 	$text .= "</select>
 	</td>

@@ -1,9 +1,17 @@
-# Are you upgrading from 0.3 to 0.4? Read this!
+# Notes
+
+If you are upgrading chances are you should read the below:
+
+## Are you upgrading from 0.3 to 0.4?
 
 Due to the **massive** amounts of changes made to wowrecruit (it's basically a rewrite) you are encouraged to **UNINSTALL** and then **DELETE** your previous installation of wowrecruit.
 
 I am not responsible for errors you are thrown if you don't do the above. If you come to me with errors and you answer the question "Did you delete your old copy?" with "No."
 I'm going to stab you.
+
+## Are you upgrading to 0.5?
+
+As of 0.5 you can now define whether or not the Feral Druids you are seeking are DPS or Tank spec. If you were seeking Feral Druids, they now default to DPS. If you were seeking Bear Druids, you'll have to update your needs accordingly.
 
 # WoW Recruitment Menu
 
