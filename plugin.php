@@ -3,12 +3,12 @@ include_lan(e_PLUGIN."wowrecruit_menu/languages/".e_LANGUAGE.".php");
 
 // -- [ PLUGIN INFO ]
 $eplug_name        = "WoW Recruitment Menu";
-$eplug_version     = "0.5";
+$eplug_version     = "0.5.1";
 $eplug_author      = "Patrick Weaver";
-$eplug_url         = "http://painswitch.com/";
+$eplug_url         = "http://trickmod.com/";
 $eplug_email       = "patrickweaver@gmail.com";
 $eplug_description = WOWREC_PLUG01;
-$eplug_compatible  = "e107 0.7+";
+$eplug_compatible  = "e107 1.0+";
 $eplug_readme      = "";
 $eplug_compliant   = TRUE;
 $eplug_module      = FALSE;

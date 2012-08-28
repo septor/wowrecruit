@@ -58,6 +58,7 @@ define("WOWREC_ROGUE", "Rogue");
 define("WOWREC_SHAMAN", "Shaman");
 define("WOWREC_WARLOCK", "Warlock");
 define("WOWREC_WARRIOR", "Warrior");
+define("WOWREC_MONK", "Monk");
 
 // SPECS
 define("WOWREC_BLOOD", "Blood");
@@ -87,5 +88,8 @@ define("WOWREC_DEMONOLOGY", "Demonology");
 define("WOWREC_DESTRUCTION", "Destruction");
 define("WOWREC_ARMS", "Arms");
 define("WOWREC_FURY", "Fury");
+define("WOWREC_BREWMASTER", "Brewmaster");
+define("WOWREC_MISTWEAVER", "Mistweaver");
+define("WOWREC_WINDWALKER", "Windwalker");
 
 ?>

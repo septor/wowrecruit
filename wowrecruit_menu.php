@@ -14,7 +14,7 @@ $applyurl = ($useAvalanche == true ? e_PLUGIN."avalanche/apply.php" : (($pref['w
 function recruitBlock($class, $spec, $needed){
 	return "
 	<tr>
-		<td><img src='".WOWREC."images/".strtolower(str_replace(" ", "", $class)).".gif' border='0'></td>
+		<td><img src='".WOWREC."images/".strtolower(str_replace(" ", "", $class)).".jpg' style='border:0; width:20px; height:20px;' /></td>
 		<td style='text-align:right;'>".$needed."</td>
 		<td><span class='wow_".strtolower(str_replace(" ", "", $class))."'>".$spec." ".$class.($needed > 1 ? "s" : "")."</span></td>
 	</tr>";
